@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Complete the Rock Solid Pet Grooming client intake and grooming consent form.">
+  <title>Client Intake | Rock Solid Pet Grooming</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top-banner pricing-banner">
+    <h1>Client Intake</h1>
+    <div class="nav-buttons">
+      <a class="nav-button" href="index.html">About Us</a>
+      <a class="nav-button" href="price_page.html">Services &amp; Pricing</a>
+      <a class="nav-button" href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main class="section intake-page">
+    <section class="intake-shell">
+      <div class="section-heading-block intake-heading">
+        <h2 class="section-title">New Client Form</h2>
+        <p class="section-text">
+          Please complete one form per pet so we can provide a safe, calm, one-on-one grooming experience.
+        </p>
+      </div>
+
+      <form class="intake-form" action="https://api.staticforms.dev/submit" method="post">
+        <input type="hidden" name="apiKey" value="sf_eb97f1ec8ab821a5ba3ac851">
+        <input type="hidden" name="subject" value="New Rock Solid Pet Grooming Intake Form Submission">
+        <input type="hidden" name="redirectTo" value="https://www.rocksolidpetgrooming.com/thank-you.html">
+        <input type="text" name="honeypot" class="sr-only" tabindex="-1" autocomplete="off">
+
+        <section class="form-section">
+          <h3>Owner Information</h3>
+          <div class="form-grid two-column">
+            <label>
+              Owner Name
+              <input type="text" name="owner_name" autocomplete="name" required>
+            </label>
+            <label>
+              Primary Phone
+              <input type="tel" name="primary_phone" autocomplete="tel" required>
+            </label>
+            <label>
+              Secondary Phone
+              <input type="tel" name="secondary_phone" autocomplete="tel-national">
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+          </div>
+          <label>
+            Home Address
+            <textarea name="home_address" rows="3" autocomplete="street-address" required></textarea>
+          </label>
+          <div class="form-grid two-column">
+            <label>
+              Emergency Contact Name
+              <input type="text" name="emergency_contact_name" required>
+            </label>
+            <label>
+              Emergency Contact Phone
+              <input type="tel" name="emergency_contact_phone" required>
+            </label>
+          </div>
+        </section>
+
+        <section class="form-section">
+          <h3>Pet Profile</h3>
+          <div class="form-grid three-column">
+            <label>
+              Pet Name
+              <input type="text" name="pet_name" required>
+            </label>
+            <label>
+              Breed
+              <input type="text" name="breed" required>
+            </label>
+            <label>
+              Age
+              <input type="text" name="age" placeholder="Example: 3 years" required>
+            </label>
+            <label>
+              Approximate Weight
+              <input type="text" name="weight" placeholder="Example: 18 lbs" required>
+            </label>
+            <fieldset>
+              <legend>Sex</legend>
+              <div class="choice-row">
+                <label class="choice-pill"><input type="radio" name="sex" value="Male" required> Male</label>
+                <label class="choice-pill"><input type="radio" name="sex" value="Female" required> Female</label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Spayed / Neutered</legend>
+              <div class="choice-row">
+                <label class="choice-pill"><input type="radio" name="spayed_neutered" value="Yes" required> Yes</label>
+                <label class="choice-pill"><input type="radio" name="spayed_neutered" value="No" required> No</label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Rabies Vaccination Current</legend>
+              <div class="choice-row">
+                <label class="choice-pill"><input type="radio" name="rabies_current" value="Yes" required> Yes</label>
+                <label class="choice-pill"><input type="radio" name="rabies_current" value="No" required> No</label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Comfortable Around Other Animals</legend>
+              <div class="choice-row">
+                <label class="choice-pill"><input type="radio" name="other_animals_ok" value="Yes" required> Yes</label>
+                <label class="choice-pill"><input type="radio" name="other_animals_ok" value="No" required> No</label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Easily Startled by Noises</legend>
+              <div class="choice-row">
+                <label class="choice-pill"><input type="radio" name="startled_by_noises" value="Yes" required> Yes</label>
+                <label class="choice-pill"><input type="radio" name="startled_by_noises" value="No" required> No</label>
+              </div>
+            </fieldset>
+          </div>
+          <label>
+            Special Interaction Needs or Environmental Triggers
+            <textarea name="special_interaction_needs" rows="4" placeholder="Anything that helps us keep your pet calm, comfortable, and safe."></textarea>
+          </label>
+        </section>
+
+        <section class="form-section">
+          <h3>Veterinary &amp; Health History</h3>
+          <div class="form-grid two-column">
+            <label>
+              Preferred Vet Clinic
+              <input type="text" name="vet_clinic" required>
+            </label>
+            <label>
+              Clinic Phone
+              <input type="tel" name="vet_phone" required>
+            </label>
+            <label>
+              Rabies Tag / Certificate Number
+              <input type="text" name="rabies_tag_number">
+            </label>
+            <label>
+              Rabies Expiration Date
+              <input type="date" name="rabies_expiration">
+            </label>
+          </div>
+          <div class="form-grid stacked">
+            <label>
+              Allergies or Skin Sensitivities
+              <textarea name="allergies" rows="3"></textarea>
+            </label>
+            <label>
+              Medical Conditions
+              <textarea name="medical_conditions" rows="3"></textarea>
+            </label>
+            <label>
+              Current Medications
+              <textarea name="current_medications" rows="3"></textarea>
+            </label>
+          </div>
+        </section>
+
+        <section class="form-section">
+          <h3>Behavior History</h3>
+          <div class="form-grid stacked">
+            <label>
+              Touch-Sensitive Areas
+              <textarea name="touch_sensitive_areas" rows="3" placeholder="Example: paws, face, tail, ears."></textarea>
+            </label>
+          </div>
+          <fieldset>
+            <legend>History of Aggression, Extreme Anxiety, or Biting</legend>
+            <div class="choice-row">
+              <label class="choice-pill"><input type="radio" name="aggression_history" value="Yes" required> Yes</label>
+              <label class="choice-pill"><input type="radio" name="aggression_history" value="No" required> No</label>
+            </div>
+          </fieldset>
+          <label>
+            If Yes, Please Describe
+            <textarea name="aggression_details" rows="4"></textarea>
+          </label>
+        </section>
+
+        <section class="form-section">
+          <h3>Requested Service</h3>
+          <fieldset>
+            <legend>Service Type</legend>
+            <div class="choice-grid">
+              <label class="choice-card"><input type="radio" name="service_type" value="Bath and Brush" required> Bath &amp; Brush</label>
+              <label class="choice-card"><input type="radio" name="service_type" value="Full Groom" required> Full Groom</label>
+              <label class="choice-card"><input type="radio" name="service_type" value="Tidy-Up" required> Tidy-Up</label>
+            </div>
+          </fieldset>
+          <label>
+            Desired Style / Length
+            <textarea name="desired_style_length" rows="4" placeholder="Tell us about coat length, face style, or any special grooming requests."></textarea>
+          </label>
+        </section>
+
+        <section class="form-section">
+          <h3>Policies &amp; Consent</h3>
+          <p class="form-intro">
+            Please review the policy summaries below and confirm your acknowledgment before submitting.
+          </p>
+          <div class="consent-grid">
+            <label class="check-card">
+              <input type="checkbox" name="ack_health_and_disclosure" value="Yes" required>
+              I confirm my pet is fit for grooming, rabies information is current, and I have disclosed any known medical, skin, or behavior concerns.
+            </label>
+            <label class="check-card">
+              <input type="checkbox" name="ack_grooming_risks" value="Yes" required>
+              I understand grooming may involve risks for senior, special-needs, anxious, or matted pets, and I authorize needed matting removal or stopping service if continuing would be unsafe.
+            </label>
+            <label class="check-card">
+              <input type="checkbox" name="ack_emergency_and_liability" value="Yes" required>
+              I authorize emergency veterinary care if needed and release Rock Solid Pet Grooming from liability except in cases of proven negligence.
+            </label>
+            <label class="check-card">
+              <input type="checkbox" name="ack_pickup_and_policies" value="Yes" required>
+              I agree to pickup timing, late fees, payment, cancellation, no-show, and transfer-of-care policies, and I understand this is a home-based grooming environment.
+            </label>
+            <label class="check-card">
+              <input type="checkbox" name="ack_parasites" value="Yes" required>
+              I understand flea or tick issues may require treatment, service changes, or additional cleaning fees.
+            </label>
+          </div>
+          <fieldset>
+            <legend>Media Release</legend>
+            <div class="choice-row">
+              <label class="choice-pill"><input type="radio" name="media_release" value="Yes" required> Yes, photos may be used</label>
+              <label class="choice-pill"><input type="radio" name="media_release" value="No" required> No, please do not use photos</label>
+            </div>
+          </fieldset>
+        </section>
+
+        <section class="form-section">
+          <h3>Final Authorization</h3>
+          <label class="check-card final-check">
+            <input type="checkbox" name="confirm_information_accurate" value="Yes" required>
+            I confirm the information provided is accurate and complete to the best of my knowledge.
+          </label>
+          <div class="form-grid two-column">
+            <label>
+              Typed Owner Signature
+              <input type="text" name="signature_name" required>
+            </label>
+            <label>
+              Date
+              <input type="date" name="signature_date" required>
+            </label>
+          </div>
+        </section>
+
+        <div class="submit-row">
+          <button class="submit-button" type="submit">Submit Intake Form</button>
+          <p class="submit-note">You will be redirected to a confirmation page after submission.</p>
+        </div>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

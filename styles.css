@@ -337,6 +337,195 @@ h2 {
   font-weight: bold;
 }
 
+/* INTAKE FORM */
+.intake-page {
+  padding-top: 56px;
+  padding-bottom: 72px;
+}
+
+.intake-shell {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.intake-heading .section-text {
+  margin-bottom: 0;
+}
+
+.intake-form {
+  background: #faf7f2;
+  border: 1px solid #e5dccf;
+  border-radius: 24px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+  padding: 36px 32px;
+}
+
+.form-section + .form-section {
+  margin-top: 36px;
+  padding-top: 36px;
+  border-top: 1px solid #e5dccf;
+}
+
+.form-section h3 {
+  margin: 0 0 18px;
+  font-size: 1.65rem;
+  color: #2f5b48;
+}
+
+.form-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.two-column {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.three-column {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.stacked {
+  grid-template-columns: 1fr;
+}
+
+.intake-form label,
+.intake-form legend,
+.form-intro {
+  font-size: 0.98rem;
+  color: #3c3c3c;
+}
+
+.intake-form label {
+  display: block;
+  font-weight: 600;
+}
+
+.intake-form input[type="text"],
+.intake-form input[type="tel"],
+.intake-form input[type="email"],
+.intake-form input[type="date"],
+.intake-form textarea {
+  width: 100%;
+  margin-top: 8px;
+  padding: 14px 16px;
+  border: 1px solid #d8cebf;
+  border-radius: 14px;
+  background: #fffdf9;
+  color: #2f2f2f;
+  font: inherit;
+}
+
+.intake-form textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+.intake-form fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.intake-form legend {
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.choice-row,
+.choice-grid,
+.consent-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.choice-row {
+  grid-template-columns: repeat(auto-fit, minmax(180px, max-content));
+}
+
+.choice-grid {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.consent-grid {
+  grid-template-columns: 1fr;
+  margin-bottom: 24px;
+}
+
+.choice-pill,
+.choice-card,
+.check-card {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 14px 16px;
+  background: #fffdf9;
+  border: 1px solid #e1d6c7;
+  border-radius: 16px;
+  font-weight: 600;
+}
+
+.choice-card,
+.check-card {
+  min-height: 100%;
+}
+
+.final-check {
+  margin-bottom: 18px;
+}
+
+.choice-pill input,
+.choice-card input,
+.check-card input {
+  margin-top: 3px;
+  accent-color: #2f5b48;
+}
+
+.form-intro {
+  margin: 0 0 18px;
+  line-height: 1.6;
+}
+
+.submit-row {
+  margin-top: 36px;
+  text-align: center;
+}
+
+.submit-button {
+  border: 0;
+  border-radius: 999px;
+  background: #2f5b48;
+  color: #fff;
+  padding: 16px 34px;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+  background: #264b3c;
+  transform: translateY(-1px);
+}
+
+.submit-note {
+  margin: 14px 0 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 /* FOOTER */
 .footer-strip {
   background: #e7dfd3;
@@ -397,6 +586,15 @@ h2 {
 
   .index-card h1 {
     font-size: 2.3rem;
+  }
+
+  .intake-form {
+    padding: 28px 20px;
+  }
+
+  .two-column,
+  .three-column {
+    grid-template-columns: 1fr;
   }
 }
 
