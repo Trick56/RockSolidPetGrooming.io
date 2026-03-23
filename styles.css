@@ -433,8 +433,7 @@ h2 {
 }
 
 .choice-row,
-.choice-grid,
-.consent-grid {
+.choice-grid {
   display: grid;
   gap: 12px;
 }
@@ -445,11 +444,6 @@ h2 {
 
 .choice-grid {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-}
-
-.consent-grid {
-  grid-template-columns: 1fr;
-  margin-bottom: 24px;
 }
 
 .choice-pill,
@@ -468,10 +462,6 @@ h2 {
 .choice-card,
 .check-card {
   min-height: 100%;
-}
-
-.final-check {
-  margin-bottom: 18px;
 }
 
 .choice-pill input,
