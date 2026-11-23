@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse the Rock Solid Pet Grooming photo gallery.">
+  <title>Gallery | Rock Solid Pet Grooming</title>
+  <link rel="stylesheet" href="styles.css?v=20261123">
+</head>
+<body>
+  <header class="top-banner pricing-banner">
+    <h1>Gallery</h1>
+    <nav class="nav-buttons" aria-label="Main navigation">
+      <a class="nav-button" href="index.html">About Us</a>
+      <a class="nav-button secondary is-active" href="gallery.html" aria-current="page">Gallery</a>
+      <a class="nav-button" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="section gallery-page">
+    <section class="gallery-shell" aria-labelledby="gallery-title">
+      <h2 class="section-title" id="gallery-title">Fresh From the Grooming Table</h2>
+      <p class="section-text">A little preview of the pups we care for. Photos coming soon!</p>
+      <div class="gallery-grid">
+        <button class="gallery-tile" type="button" aria-label="Preview gallery space 1" data-label="Photo 1 coming soon">
+          <span class="gallery-placeholder" aria-hidden="true"><span class="gallery-paw">✦</span><span>Photo 01</span></span>
+        </button>
+        <button class="gallery-tile" type="button" aria-label="Preview gallery space 2" data-label="Photo 2 coming soon">
+          <span class="gallery-placeholder" aria-hidden="true"><span class="gallery-paw">✦</span><span>Photo 02</span></span>
+        </button>
+        <button class="gallery-tile" type="button" aria-label="Preview gallery space 3" data-label="Photo 3 coming soon">
+          <span class="gallery-placeholder" aria-hidden="true"><span class="gallery-paw">✦</span><span>Photo 03</span></span>
+        </button>
+        <button class="gallery-tile" type="button" aria-label="Preview gallery space 4" data-label="Photo 4 coming soon">
+          <span class="gallery-placeholder" aria-hidden="true"><span class="gallery-paw">✦</span><span>Photo 04</span></span>
+        </button>
+        <button class="gallery-tile" type="button" aria-label="Preview gallery space 5" data-label="Photo 5 coming soon">
+          <span class="gallery-placeholder" aria-hidden="true"><span class="gallery-paw">✦</span><span>Photo 05</span></span>
+        </button>
+        <button class="gallery-tile" type="button" aria-label="Preview gallery space 6" data-label="Photo 6 coming soon">
+          <span class="gallery-placeholder" aria-hidden="true"><span class="gallery-paw">✦</span><span>Photo 06</span></span>
+        </button>
+        <button class="gallery-tile" type="button" aria-label="Preview gallery space 7" data-label="Photo 7 coming soon">
+          <span class="gallery-placeholder" aria-hidden="true"><span class="gallery-paw">✦</span><span>Photo 07</span></span>
+        </button>
+        <button class="gallery-tile" type="button" aria-label="Preview gallery space 8" data-label="Photo 8 coming soon">
+          <span class="gallery-placeholder" aria-hidden="true"><span class="gallery-paw">✦</span><span>Photo 08</span></span>
+        </button>
+        <button class="gallery-tile" type="button" aria-label="Preview gallery space 9" data-label="Photo 9 coming soon">
+          <span class="gallery-placeholder" aria-hidden="true"><span class="gallery-paw">✦</span><span>Photo 09</span></span>
+        </button>
+      </div>
+    </section>
+  </main>
+  <dialog class="gallery-lightbox" aria-label="Enlarged gallery photo">
+    <button type="button" class="gallery-close" aria-label="Close photo">×</button>
+    <div class="gallery-lightbox-content"></div>
+  </dialog>
+  <script src="gallery.js" defer></script>
+</body>
+</html>
