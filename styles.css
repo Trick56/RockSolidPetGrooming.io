@@ -605,3 +605,24 @@ h2 {
     font-size: 34px;
   }
 }
+
+/* GALLERY */
+.gallery-page { padding-top: 56px; padding-bottom: 76px; }
+.gallery-shell { max-width: 980px; margin: 0 auto; }
+.gallery-page .section-text { margin-bottom: 34px; }
+.gallery-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.gallery-tile { display: block; width: 100%; aspect-ratio: 1; padding: 0; border: 0; border-radius: 16px; overflow: hidden; background: #e7dfd3; cursor: zoom-in; box-shadow: 0 6px 16px rgba(0,0,0,.08); transition: transform .18s ease, box-shadow .18s ease; }
+.gallery-tile:hover { transform: translateY(-3px); box-shadow: 0 10px 22px rgba(0,0,0,.13); }
+.gallery-tile:focus-visible, .gallery-close:focus-visible { outline: 3px solid #2f5b48; outline-offset: 3px; }
+.gallery-tile img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.gallery-placeholder { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 10px; width: 100%; height: 100%; color: #2f5b48; font-size: 1rem; font-weight: 700; letter-spacing: .03em; background: linear-gradient(135deg, #f8f4ec, #dfd2bd); }
+.gallery-paw { font-size: 2.8rem; line-height: 1; opacity: .65; }
+.gallery-lightbox { width: min(92vw, 780px); max-height: 90vh; padding: 44px 16px 16px; border: none; border-radius: 18px; background: #faf7f2; box-shadow: 0 20px 60px rgba(0,0,0,.3); }
+.gallery-lightbox::backdrop { background: rgba(0,0,0,.76); }
+.gallery-close { position: absolute; top: 4px; right: 10px; background: transparent; color: #2f2f2f; border: 0; font-size: 2rem; cursor: pointer; }
+.gallery-lightbox-content { display: flex; justify-content: center; align-items: center; }
+.gallery-enlarged { max-width: 100%; max-height: calc(90vh - 75px); object-fit: contain; border-radius: 10px; }
+.gallery-enlarged-placeholder { min-height: min(60vw, 540px); }
+@media (max-width: 700px) { .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; } }
+@media (max-width: 400px) { .gallery-grid { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .gallery-tile { transition: none; } }
