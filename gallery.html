@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photos of pets groomed by Rock Solid Pet Grooming.">
+  <title>Gallery | Rock Solid Pet Grooming</title>
+  <link rel="stylesheet" href="styles.css?v=20261123-gallery">
+</head>
+<body>
+  <header class="top-banner pricing-banner">
+    <h1>Gallery</h1>
+    <nav class="nav-buttons" aria-label="Main navigation">
+      <a class="nav-button" href="index.html">About Us</a>
+      <a class="nav-button" href="price_page.html">Services &amp; Pricing</a>
+      <a class="nav-button secondary is-active" href="gallery.html" aria-current="page">Gallery</a>
+    </nav>
+  </header>
+
+  <main class="section gallery-page">
+    <section class="gallery-shell" aria-labelledby="gallery-title">
+      <h2 class="section-title" id="gallery-title">Grooming Gallery</h2>
+      <div class="gallery-grid">
+        <button class="gallery-tile" type="button" aria-label="View grooming photo 1">
+          <span class="gallery-placeholder" aria-hidden="true"><span class="gallery-paw">✦</span><span>Photo 01</span></span>
+          <img src="groom-01.webp" alt="Small tan-and-white dog with a fresh trim and brown bandana" loading="lazy" decoding="async" width="900" height="900">
+        </button>
+        <button class="gallery-tile" type="button" aria-label="View grooming photo 2">
+          <span class="gallery-placeholder" aria-hidden="true"><span class="gallery-paw">✦</span><span>Photo 02</span></span>
+          <img src="groom-02.webp" alt="Black dog with a fresh trim and bright pink bandana" loading="lazy" decoding="async" width="900" height="900">
+        </button>
+        <button class="gallery-tile" type="button" aria-label="View grooming photo 3">
+          <span class="gallery-placeholder" aria-hidden="true"><span class="gallery-paw">✦</span><span>Photo 03</span></span>
+          <img src="groom-03.webp" alt="Black curly-coated dog with a patterned bandana" loading="lazy" decoding="async" width="900" height="900">
+        </button>
+        <button class="gallery-tile" type="button" aria-label="View grooming photo 4">
+          <span class="gallery-placeholder" aria-hidden="true"><span class="gallery-paw">✦</span><span>Photo 04</span></span>
+          <img src="groom-04.webp" alt="Apricot curly-coated dog wearing a white bandana" loading="lazy" decoding="async" width="900" height="900">
+        </button>
+        <button class="gallery-tile" type="button" aria-label="View grooming photo 5">
+          <span class="gallery-placeholder" aria-hidden="true"><span class="gallery-paw">✦</span><span>Photo 05</span></span>
+          <img src="groom-05.webp" alt="Chocolate-brown dog after grooming with a pink bandana" loading="lazy" decoding="async" width="900" height="900">
+        </button>
+        <button class="gallery-tile" type="button" aria-label="View grooming photo 6">
+          <span class="gallery-placeholder" aria-hidden="true"><span class="gallery-paw">✦</span><span>Photo 06</span></span>
+          <img src="groom-06.webp" alt="Gray poodle with a fresh haircut and paw-print bandana" loading="lazy" decoding="async" width="900" height="900">
+        </button>
+        <button class="gallery-tile" type="button" aria-label="View grooming photo 7">
+          <span class="gallery-placeholder" aria-hidden="true"><span class="gallery-paw">✦</span><span>Photo 07</span></span>
+          <img src="groom-07.webp" alt="Golden retriever with a tidy coat outdoors" loading="lazy" decoding="async" width="900" height="900">
+        </button>
+        <button class="gallery-tile" type="button" aria-label="View grooming photo 8">
+          <span class="gallery-placeholder" aria-hidden="true"><span class="gallery-paw">✦</span><span>Photo 08</span></span>
+          <img src="groom-08.webp" alt="Small tan dog wearing a colorful bandana" loading="lazy" decoding="async" width="900" height="900">
+        </button>
+        <button class="gallery-tile" type="button" aria-label="View grooming photo 9">
+          <span class="gallery-placeholder" aria-hidden="true"><span class="gallery-paw">✦</span><span>Photo 09</span></span>
+          <img src="groom-09.webp" alt="Two happy dogs together, one wearing a bandana" loading="lazy" decoding="async" width="900" height="900">
+        </button>
+      </div>
+    </section>
+  </main>
+  <dialog class="gallery-lightbox" aria-label="Enlarged gallery photo">
+    <button type="button" class="gallery-close" aria-label="Close photo">×</button>
+    <div class="gallery-lightbox-content"></div>
+  </dialog>
+  <script src="gallery.js" defer></script>
+</body>
+</html>

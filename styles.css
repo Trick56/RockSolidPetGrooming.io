@@ -605,3 +605,176 @@ h2 {
     font-size: 34px;
   }
 }
+
+/* GALLERY */
+.gallery-page { padding-top: 56px; padding-bottom: 76px; }
+.gallery-shell { max-width: 980px; margin: 0 auto; }
+.gallery-page .section-text { margin-bottom: 34px; }
+.gallery-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.gallery-tile { display: block; width: 100%; aspect-ratio: 1; padding: 0; border: 0; border-radius: 16px; overflow: hidden; background: #e7dfd3; cursor: zoom-in; box-shadow: 0 6px 16px rgba(0,0,0,.08); transition: transform .18s ease, box-shadow .18s ease; }
+.gallery-tile:hover { transform: translateY(-3px); box-shadow: 0 10px 22px rgba(0,0,0,.13); }
+.gallery-tile:focus-visible, .gallery-close:focus-visible { outline: 3px solid #2f5b48; outline-offset: 3px; }
+.gallery-tile img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.gallery-placeholder { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 10px; width: 100%; height: 100%; color: #2f5b48; font-size: 1rem; font-weight: 700; letter-spacing: .03em; background: linear-gradient(135deg, #f8f4ec, #dfd2bd); }
+.gallery-paw { font-size: 2.8rem; line-height: 1; opacity: .65; }
+.gallery-lightbox { width: min(92vw, 780px); max-height: 90vh; padding: 44px 16px 16px; border: none; border-radius: 18px; background: #faf7f2; box-shadow: 0 20px 60px rgba(0,0,0,.3); }
+.gallery-lightbox::backdrop { background: rgba(0,0,0,.76); }
+.gallery-close { position: absolute; top: 4px; right: 10px; background: transparent; color: #2f2f2f; border: 0; font-size: 2rem; cursor: pointer; }
+.gallery-lightbox-content { display: flex; justify-content: center; align-items: center; }
+.gallery-enlarged { max-width: 100%; max-height: calc(90vh - 75px); object-fit: contain; border-radius: 10px; }
+.gallery-enlarged-placeholder { min-height: min(60vw, 540px); }
+@media (max-width: 700px) { .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; } }
+@media (max-width: 400px) { .gallery-grid { grid-template-columns: 1fr; } }
+@media (prefers-reduced-motion: reduce) { .gallery-tile { transition: none; } }
+
+/* CONTACT MOBILE USABILITY */
+.contact-card .pricing-link-row {
+  margin: 10px 0 26px;
+}
+.contact-card .pricing-link-row .hero-button {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-card .contact-line a {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 480px) {
+  .contact-page {
+    padding: 28px 14px 48px;
+  }
+  .contact-card {
+    padding: 26px 16px;
+  }
+  .contact-card .section-text {
+    font-size: 17px;
+    margin-bottom: 22px;
+  }
+  .contact-card .pricing-link-row .hero-button {
+    width: 100%;
+  }
+  .contact-line {
+    font-size: 1rem;
+  }
+}
+
+
+/* ABOUT CONTENT AND HOUSE-CALL INSTRUCTIONS */
+#about.about-content {
+  padding: 56px 24px 24px;
+}
+#about.about-content p {
+  max-width: 800px;
+  font-size: 1.12rem;
+  line-height: 1.75;
+  margin: 0 auto 20px;
+}
+.house-call-section, .about-contact {
+  padding: 30px 24px 52px;
+}
+.house-call-intro, .about-contact > p {
+  max-width: 800px;
+  margin: 0 auto 22px;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+.house-call-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 24px auto 0;
+}
+.house-call-card {
+  padding: 26px;
+  background: #faf7f2;
+  border: 1px solid #e5dccf;
+  border-radius: 18px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.04);
+}
+.house-call-card h3 { margin: 0 0 10px; color: #2f5b48; font-size: 1.2rem; }
+.house-call-card p { margin: 0; line-height: 1.65; }
+.about-contact {
+  margin-top: 10px;
+  padding-top: 24px;
+  padding-bottom: 64px;
+}
+.about-contact a:not(.hero-button) {
+  color: #2f5b48;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+.about-contact .hero-button { min-height: 48px; display: inline-flex; align-items: center; }
+
+/* NATIVE TEXT SERVICE AND PRICING TABLES */
+.pricing-page { padding: 42px 24px 80px; }
+.pricing-page .pricing-section {
+  max-width: 1100px;
+  margin: 0 auto 38px;
+  padding: 0;
+}
+.pricing-page .pricing-section h2 {
+  font-size: clamp(1.65rem, 3vw, 2.25rem);
+  margin: 0 0 16px;
+}
+.pricing-page .pricing-section h3 { color: #2f5b48; }
+.pricing-page .pricing-list-section {
+  background: #faf7f2;
+  border: 1px solid #e5dccf;
+  border-radius: 18px;
+  padding: 26px 28px;
+}
+.pricing-page .pricing-list-section h3 { margin-bottom: 4px; }
+.pricing-page .pricing-list-section p { max-width: 850px; margin: 0 0 18px; }
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+.package-card {
+  min-width: 0;
+  padding: 22px 18px;
+  background: #faf7f2;
+  border: 1px solid #e5dccf;
+  border-radius: 18px;
+}
+.package-card h3 { margin: 0 0 12px; font-size: 1.27rem; }
+.package-description { min-height: 112px; margin: 0 0 16px; font-size: .98rem; }
+.price-table { width: 100%; border-collapse: collapse; font-size: 1rem; }
+.price-table tr:nth-child(odd) { background: #f3ede6; }
+.price-table th, .price-table td { padding: 10px 9px; text-align: left; vertical-align: top; }
+.price-table th { font-weight: 400; overflow-wrap: anywhere; }
+.price-table td { text-align: right; white-space: nowrap; font-weight: 700; color: #2f5b48; }
+.pricing-disclaimer {
+  padding: 24px 28px !important;
+  border-left: 4px solid #2f5b48;
+  background: #f0e9de;
+  border-radius: 10px;
+}
+.pricing-disclaimer h2 { font-size: 1.45rem !important; text-align: left; }
+.pricing-disclaimer p { margin: 0; line-height: 1.75; }
+.pricing-disclaimer .pricing-action { margin-top: 22px; }
+.pricing-action .hero-button { min-height: 48px; display: inline-flex; align-items: center; }
+
+@media (max-width: 850px) {
+  .package-grid { grid-template-columns: 1fr; max-width: 650px; margin: 0 auto; }
+  .package-description { min-height: 0; }
+}
+@media (max-width: 700px) {
+  .house-call-grid { grid-template-columns: 1fr; }
+  .house-call-card { padding: 22px 20px; }
+  #about.about-content { padding-top: 36px; }
+  #about.about-content p { font-size: 1.06rem; }
+  .pricing-page { padding: 30px 16px 60px; }
+  .pricing-page .pricing-list-section { padding: 22px 16px; }
+  .price-table th, .price-table td { padding: 10px 7px; }
+}
+@media (max-width: 440px) {
+  .about-contact .hero-button, .pricing-action .hero-button { width: 100%; justify-content: center; }
+}
+
+/* GALLERY PHOTO LOADING: placeholders remain until image files are uploaded */
+.gallery-tile { position: relative; }
+.gallery-tile > img { position: absolute; inset: 0; z-index: 1; }
