@@ -626,3 +626,35 @@ h2 {
 @media (max-width: 700px) { .gallery-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; } }
 @media (max-width: 400px) { .gallery-grid { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) { .gallery-tile { transition: none; } }
+
+/* CONTACT MOBILE USABILITY */
+.contact-card .pricing-link-row {
+  margin: 10px 0 26px;
+}
+.contact-card .pricing-link-row .hero-button {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact-card .contact-line a {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 480px) {
+  .contact-page {
+    padding: 28px 14px 48px;
+  }
+  .contact-card {
+    padding: 26px 16px;
+  }
+  .contact-card .section-text {
+    font-size: 17px;
+    margin-bottom: 22px;
+  }
+  .contact-card .pricing-link-row .hero-button {
+    width: 100%;
+  }
+  .contact-line {
+    font-size: 1rem;
+  }
+}
