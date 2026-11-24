@@ -774,3 +774,7 @@ h2 {
 @media (max-width: 440px) {
   .about-contact .hero-button, .pricing-action .hero-button { width: 100%; justify-content: center; }
 }
+
+/* GALLERY PHOTO LOADING: placeholders remain until image files are uploaded */
+.gallery-tile { position: relative; }
+.gallery-tile > img { position: absolute; inset: 0; z-index: 1; }
