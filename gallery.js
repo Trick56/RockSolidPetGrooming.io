@@ -1,12 +1,19 @@
-// Gallery tiles can display a real image once it is added inside each button.
-// Until then, a styled placeholder is shown. Native dialog supports Escape to close.
+// The gallery works with local image files; missing files show placeholders.
 const dialog = document.querySelector(".gallery-lightbox");
 const content = document.querySelector(".gallery-lightbox-content");
 document.querySelectorAll(".gallery-tile").forEach((tile) => {
+  const photo = tile.querySelector("img");
+  if (photo) {
+    const hideMissing = () => {
+      if (photo.naturalWidth === 0) photo.remove();
+    };
+    photo.addEventListener("error", hideMissing);
+    if (photo.complete) hideMissing();
+  }
   tile.addEventListener("click", () => {
     content.replaceChildren();
     const image = tile.querySelector("img");
-    if (image) {
+    if (image && image.naturalWidth > 0) {
       const enlarged = image.cloneNode(true);
       enlarged.removeAttribute("loading");
       enlarged.className = "gallery-enlarged";
